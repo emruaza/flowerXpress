@@ -1,0 +1,21 @@
+{
+  "adds_wrap": {
+    "marginBottom": "50px",
+    "marginTop": "100px"
+  },
+  "adds_header": {
+    "fontSize": "60px",
+    "fontWeight": "700",
+    "lineHeight": "60px",
+    "marginTop": "100px",
+    "textShadow": "0 1px 0 rgba(0,0,0,0.5)"
+  },
+  "adds_header_cert": {
+    "fontWeight": "300"
+  },
+  "adds_description": {
+    "fontSize": "16px",
+    "fontWeight": "300",
+    "marginTop": "30px"
+  }
+}

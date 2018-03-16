@@ -1,0 +1,29 @@
+{
+  "banner_img": {
+    "backgroundAttachment": "fixed",
+    "backgroundPosition": "center center",
+    "backgroundRepeat": "no-repeat",
+    "backgroundSize": "cover",
+    "height": "100%",
+    "left": "0",
+    "position": "absolute",
+    "top": "0",
+    "transition": "all 1s ease",
+    "width": "100%"
+  },
+  "announcement_bar": {
+    "backgroundColor": "rgba(83, 58, 132, 0.9)",
+    "boxSizing": "border-box",
+    "color": "#ccabe8",
+    "fontSize": "15px",
+    "lineHeight": "60px",
+    "left": "0",
+    "paddingLeft": "25px",
+    "position": "absolute",
+    "textAlign": "center",
+    "transition": "all 0.8s ease",
+    "top": "0",
+    "width": "100%",
+    "zIndex": "5"
+  }
+}

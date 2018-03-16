@@ -3,7 +3,9 @@
 # dependencies
 /node_modules
 /public
+/images
 package-lock.json
+bundle.js
 
 # testing
 /coverage

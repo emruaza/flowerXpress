@@ -1,25 +1,20 @@
 import React, {Component} from 'react';
 import Layout from "../../Shared/Layout";
 import { StyleSheet, css } from 'aphrodite/no-important';
-
-import Banner from './Banner/_Banner';
-
-const BANNER = {
-  background: 'red',
-  height: '100%',
-  position: 'absolute',
-  width: '100%',
-}
-
-const style = StyleSheet.create({
-  bannerArea: BANNER
-});
+import Container from '../../Shared/Container';
+import Banner from './Banner/Banner';
+import Categories from './Categories/Categories';
+import Moreadds from './Adds/Moreadds';
 
 class Homepage extends Component {
   render() {
     return (
       <Layout>
         <Banner />
+        <Categories />
+        <Container>
+          <Moreadds />
+        </Container>
       </Layout>
     )
   }

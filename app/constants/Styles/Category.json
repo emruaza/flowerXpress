@@ -1,0 +1,51 @@
+{
+  "link_list": {
+    "boxSizing": "border-box",
+    "display": "block",
+    "float": "left",
+    "width": "16.66%"
+  },
+  "link_style": {
+    "backgroundPosition": "center center",
+    "backgroundRepeat": "no-repeat",
+    "backgroundSize": "100% auto",
+    "boxSizing": "border-box",
+    "display": "block",
+    "transition": "all 1s ease",
+    "width": "100%",
+    ":hover": {
+      "backgroundSize": "115% auto"
+    }
+  },
+  "link_text": {
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "boxSizing": "border-box",
+    "color": "#fff",
+    "display": "block",
+    "lineHeight": "18px",
+    "paddingBottom": "44px",
+    "paddingTop": "44px",
+    "textAlign": "center",
+    "transition": "all 1s ease",
+    "width": "100%",
+    ":hover": {
+      "backgroundColor": "rgba(0,0,0,0.2)"
+    }
+  },
+  "link_name": {
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "textTransform": "uppercase"
+  },
+  "text_from": {
+    "font": "italic 400 12px Lora",
+    "paddingRight": "5px"
+  },
+  "link_price": {
+    "font": "700 15px Karma",
+    "letterSpacing": "1px"
+  },
+  "text_currency": {
+    "font": "700 13px Karma"
+  }
+}
