@@ -1,0 +1,38 @@
+{
+	"announcement": {
+    "backgroundColor": "rgba(225, 112, 85, 0.6)",
+    "boxSizing": "border-box",
+    "color": "#fff",
+    "fontSize": "15px",
+    "lineHeight": "60px",
+    "left": "0",
+    "paddingLeft": "25px",
+    "position": "absolute",
+    "textAlign": "center",
+    "transition": "all 0.8s ease",
+    "bottom": "0",
+    "width": "100%",
+    "zIndex": "5"
+  },
+  "order_link": {
+    "color": "#fff",
+    "display": "inline-block",
+    "fontSize": "14px",
+    "lineHeight": "20px",
+    "marginLeft": "5px",
+    "textDecoration": "underline"
+  },
+  "close_btn": {
+    "backgroundColor": "#999",
+    "borderRadius": "50%",
+    "color": "#fff",
+    "cursor": "pointer",
+    "display": "inline-block",
+    "float": "right",
+    "height": "25px",
+    "lineHeight": "25px",
+    "marginTop": "15px",
+    "marginRight": "20px",
+    "width": "25px"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "header": {
+    "backgroundColor": "#fff6f4",
+    "position": "relative",
+    "zIndex": "10"
+  },
+  "nav_btn": {
+    "backgroundColor": "#ccc",
+    "boxSizing": "border-box",
+    "cursor": "pointer",
+    "display": "none",
+    "float": "right",
+    "padding": "6px 8px 4px"
+  },
+  "nav_btn_span": {
+    "backgroundColor": "#555",
+    "display": "block",
+    "height": "4px",
+    "marginBottom": "4px",
+    "width": "27px"
+  },
+  "nav_ul": {
+    "borderTop": "1px solid #e8dedc",
+    "textAlign": "center"
+  },
+  "nav_list": {
+    "display": "inline-block"
+  },
+  "nav_path": {
+    "color": "#222",
+    "display": "block",
+    "fontSize": "14px",
+    "lineHeight": "60px",
+    "paddingLeft": "20px",
+    "paddingRight": "20px",
+    "position": "relative",
+    "textTransform": "uppercase",
+    "transition": "all 0.5s ease",
+    ":before, :after": {
+      "backgroundColor": "#fab1a0",
+      "content": "''",
+      "display": "block",
+      "height": "2px",
+      "left": "0",
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "position": "absolute",
+      "transition": "all 0.5s ease",
+      "right": "0",
+      "width": "0px"
+    },
+    ":before": {
+      "bottom": "0"
+    },
+    ":after": {
+      "top": "0"
+    },
+    ":hover": {
+      "color": "#e17055",
+      ":after": {
+        "width": "100%"
+      },
+      ":before": {
+        "width": "100%"
+      }
+    }
+  },
+  "header_top": {
+    "paddingBottom": "20px",
+    "paddingTop": "20px"
+  },
+  "menu_right": {
+    "float": "right",
+    "paddingRight": "15px"
+  },
+  "basket": {
+    "backgroundColor": "transparent",
+    "cursor": "pointer",
+    "position": "relative",
+    "transition": "all 0.3s ease",
+    ":hover": {
+      "transform": "scale(1.1)"
+    }
+  },
+  "basket_count": {
+    "backgroundColor": "#74b9ff",
+    "borderRadius": "50%",
+    "color": "#fff",
+    "display": "block",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "height": "17px",
+    "lineHeight": "17px",
+    "position": "absolute",
+    "right": "-11px",
+    "top": "-3px",
+    "textAlign": "center",
+    "width": "17px"
+  },
+  "delivery": {
+    "fontSize": "13px",
+    "paddingRight": "35px"
+  },
+  "fa_truck": {
+    "color": "#2c3e50",
+    "fontSize": "18px",
+    "position": "relative",
+    "paddingRight": "5px",
+    "top": "1px"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "banner": {
+    "backgroundColor": "#000",
+    "height": "545px",
+    "marginBottom": "3px",
+    "position": "relative",
+    "width": "100%"
+  },
+  "header_text": {
+    "color": "#fff",
+    "font": "italic 400 65px/76px Lora",
+    "marginLeft": "110px",
+    "marginTop": "190px",
+    "position": "relative",
+    "zIndex": "9"
+  }
+}

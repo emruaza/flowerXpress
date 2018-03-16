@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { Link } from "react-router-dom";
-
+import Container from './Container';
 import * as ROUTES from '../../constants/Routes';
+import Styles from '../../constants/Styles/Header.json';
 
 let NAVROUTES = [
   ROUTES.Home,
@@ -14,65 +15,48 @@ let NAVROUTES = [
   ROUTES.Promos
 ];
 
-const NAV_BUTTON = {
-  backgroundColor: '#ccc',
-  boxSizing: 'border-box',
-  cursor: 'pointer',
-  display: 'none',
-  float: 'right',
-  padding: '6px 8px 4px'
-}
-
-const NAV_BUTTON_SPAN = {
-  backgroundColor: '#555',
-  display: 'block',
-  height: '4px',
-  marginBottom: '4px',
-  width: '27px'
-}
-
-const NAV_UL = {
-  float: 'right',
-  paddingBottom: '30px',
-  paddingTop: '30px'
-}
-
-const NAV_LIST = {
-  float: 'left',
-  marginRight: '30px'
-}
-
-const NAV_PATH = {
-  color: '#555',
-  fontSize: '15px',
-  fontFamily: '"Karma"',
-  textTransform: 'uppercase',
-  ':hover': {
-    color: 'red'
-  }
-}
-
 const style = StyleSheet.create({
-  navButton: NAV_BUTTON,
-  navButtonSpan: NAV_BUTTON_SPAN,
-  navUL: NAV_UL,
-  navUlList: NAV_LIST,
-  navLiPath: NAV_PATH
+  headerWrap: Styles.header,
+  navButton: Styles.nav_btn,
+  navButtonSpan: Styles.nav_btn_span,
+  navUL: Styles.nav_ul,
+  navUlList: Styles.nav_list,
+  navLiPath: Styles.nav_path,
+  headerTop: Styles.header_top,
+  menuRight: Styles.menu_right,
+  shoppingBasket: Styles.basket,
+  shoppingBasketCount: Styles.basket_count,
+  faTruck: Styles.fa_truck,
+  deliveryTop: Styles.delivery
 });
 
 const Header = () => {
   return (
-    <header id="headerEl">
-      <nav className="clearfix">
-        <button className={css(style.navButton)}>
-          <span className={css(style.navButtonSpan)}></span>
-          <span className={css(style.navButtonSpan)}></span>
-          <span className={css(style.navButtonSpan)}></span>
-        </button>
-        <ul className={css(style.navUL)}>
-          {NAVROUTES.map((link, i) => <li className={css(style.navUlList)} key={i}><Link to={link.path} className={css(style.navLiPath)}>{link.name}</Link></li>)}
-        </ul>
-      </nav>
+    <header className={css(style.headerWrap)}>
+      <Container>
+        <div className={(css(style.headerTop))+" clearfix"}>
+          <div className={css(style.menuRight)}>
+            <span className={css(style.deliveryTop)}>
+              <i className={(css(style.faTruck))+" fa fa-truck"}></i>
+              Free Delivery within Metro Manila
+            </span>
+            <button className={css(style.shoppingBasket)}>
+              <span className={css(style.shoppingBasketCount)}>2</span>
+              <i className="fa fa-shopping-basket"></i>
+            </button>
+          </div>
+        </div>
+        <nav className="clearfix">
+          <button className={css(style.navButton)}>
+            <span className={css(style.navButtonSpan)}></span>
+            <span className={css(style.navButtonSpan)}></span>
+            <span className={css(style.navButtonSpan)}></span>
+          </button>
+            <ul className={css(style.navUL)}>
+              {NAVROUTES.map((link, i) => <li className={css(style.navUlList)} key={i}><Link to={link.path} className={css(style.navLiPath)}>{link.name}</Link></li>)}
+            </ul>
+        </nav>
+      </Container>
     </header>
   )
 }
